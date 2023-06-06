@@ -6,8 +6,6 @@ services:
       - "80:80"
     volumes:
       - "devopsvol"
-    deploy:
-      replicas: 3
 
   aws:
     image: rahamshaik/awsreponit:latest
@@ -15,8 +13,7 @@ services:
       - "81:80"
     volumes:
       - "awsvol"
-    deploy:
-      replicas: 3
+
 
   datascience:
     image: rahamshaik/datasciencereponit:latest
@@ -24,8 +21,6 @@ services:
       - "82:80"
     volumes:
       - "datasciencevol"
-    deploy:
-      replicas: 3
 
   azure:
     image: rahamshaik/azurereponit:latest
@@ -33,5 +28,4 @@ services:
       - "83:80"
     volumes:
       - "azurevol"
-    deploy:
-      replicas: 3
+
