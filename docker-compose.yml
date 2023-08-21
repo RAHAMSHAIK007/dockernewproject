@@ -1,28 +1,28 @@
 version: '3'
 services:
   movies:
-    image: rahamshaik/paytmappmovies:latest
+    image: rahamshaik/moviespaytm:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
   train:
-    image: rahamshaik/paytmapptrain:latest
+    image: rahamshaik/trainpaytm:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
   dth:
-    image: rahamshaik/paytmappdth:latest
+    image: rahamshaik/dthpaytm:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
 
   recharge:
-    image: rahamshaik/paytmapprecharge:latest
+    image: rahamshaik/rechargepaytm:latest
     ports:
       - "84:80"
     deploy:
