@@ -3,27 +3,27 @@ services:
   movies:
     image: rahamshaik/paytmappmovies:latest
     ports:
-      - "90:80"
+      - "81:80"
     deploy:
       replicas: 3
 
   train:
     image: rahamshaik/paytmapptrain:latest
     ports:
-      - "91:80"
+      - "82:80"
     deploy:
       replicas: 3
 
   dth:
     image: rahamshaik/paytmappdth:latest
     ports:
-      - "92:80"
+      - "83:80"
     deploy:
       replicas: 3
 
   recharge:
     image: rahamshaik/paytmapprecharge:latest
     ports:
-      - "93:80"
+      - "84:80"
     deploy:
       replicas: 3
