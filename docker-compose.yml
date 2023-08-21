@@ -1,28 +1,28 @@
 version: '3'
 services:
-  devops:
-    image: rahamshaik/devopsreponit:latest
+  movies:
+    image: rahamshaik/paytmappmovies:latest
     ports:
       - "90:80"
     deploy:
       replicas: 3
 
-  aws:
-    image: rahamshaik/awsreponit:latest
+  train:
+    image: rahamshaik/paytmapptrain:latest
     ports:
       - "91:80"
     deploy:
       replicas: 3
 
-  datascience:
-    image: rahamshaik/datasciencereponit:latest
+  dth:
+    image: rahamshaik/paytmappdth:latest
     ports:
       - "92:80"
     deploy:
       replicas: 3
 
-  azure:
-    image: rahamshaik/azurereponit:latest
+  recharge:
+    image: rahamshaik/paytmapprecharge:latest
     ports:
       - "93:80"
     deploy:
